@@ -4,21 +4,23 @@ A personal Homebrew tap providing utility tools for macOS users.
 
 ## Installation
 
-To add this tap to your Homebrew installation, run:
+### Option 1: Direct Install (Recommended)
+
+You can install any formula directly without manually adding the tap:
+
+```bash
+brew install stn1slv/tap/md-paste
+```
+
+### Option 2: Add the Tap
+
+If you plan to use multiple tools from this tap, you can add it to your Homebrew installation:
 
 ```bash
 brew tap stn1slv/tap
 ```
 
-## Installing Formulas
-
-Once the tap is added, you can install any of the available formulas using the following command:
-
-```bash
-brew install <formula_name>
-```
-
-For example, to install `md-paste`:
+Once the tap is added, you can install formulas using their short names:
 
 ```bash
 brew install md-paste
