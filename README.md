@@ -1,44 +1,40 @@
 # stn1slv Homebrew Tap
 
-A personal Homebrew tap providing utility tools for macOS users.
+A personal [Homebrew](https://brew.sh) tap with developer utility tools for macOS.
 
 ## Installation
 
-### Option 1: Direct Install (Recommended)
-
-You can install any formula directly without manually adding the tap:
+Install any formula directly:
 
 ```bash
-brew install stn1slv/tap/md-paste
+brew install stn1slv/tap/<formula>
 ```
 
-### Option 2: Add the Tap
-
-If you plan to use multiple tools from this tap, you can add it to your Homebrew installation:
+Or add the tap first, then install by short name:
 
 ```bash
 brew tap stn1slv/tap
-```
-
-Once the tap is added, you can install formulas using their short names:
-
-```bash
-brew install md-paste
+brew install <formula>
 ```
 
 ## Available Formulas
 
-This tap currently provides the following formulas:
+| Formula | Description |
+|---------|-------------|
+| [http-proxy-logger](https://github.com/stn1slv/http-proxy-logger) | HTTP reverse-proxy with colored request/response logging |
+| [md-paste](https://github.com/stn1slv/md-paste) | Convert rich text (HTML/RTF) on the clipboard to Markdown |
 
-*   **[http-proxy-logger](https://github.com/stn1slv/http-proxy-logger)**: An HTTP reverse-proxy with colored request/response logging for debugging and inspecting HTTP traffic.
-*   **[md-paste](https://github.com/stn1slv/md-paste)**: A command-line utility for macOS that converts rich text (HTML/RTF) on the clipboard directly into Markdown.
+## Troubleshooting
 
-## Troubleshooting and Reporting Issues
+If you run into problems, try updating first:
 
-If you encounter any issues while using these tools or have suggestions for improvements, please report them by opening an issue on the [GitHub repository](https://github.com/stn1slv/homebrew-tap/issues).
+```bash
+brew update
+brew upgrade <formula>
+```
 
-When reporting an issue, please include:
-*   The name of the formula you are using.
-*   Your macOS version.
-*   The steps to reproduce the problem.
-*   The error messages you are seeing.
+Still having issues? [Open an issue](https://github.com/stn1slv/homebrew-tap/issues) with:
+- Formula name
+- macOS version (`sw_vers`)
+- Steps to reproduce
+- Error output
