@@ -7,6 +7,8 @@ class HttpProxyLogger < Formula
   version "1.2.2"
   license "MIT"
 
+  depends_on :macos
+
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stn1slv/http-proxy-logger/releases/download/v.1.2.2/http-proxy-logger_darwin_amd64.tar.gz"
