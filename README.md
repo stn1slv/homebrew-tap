@@ -30,6 +30,7 @@ brew install md-paste
 
 This tap currently provides the following formulas:
 
+*   **[http-proxy-logger](https://github.com/stn1slv/http-proxy-logger)**: An HTTP reverse-proxy with colored request/response logging for debugging and inspecting HTTP traffic.
 *   **[md-paste](https://github.com/stn1slv/md-paste)**: A command-line utility for macOS that converts rich text (HTML/RTF) on the clipboard directly into Markdown.
 
 ## Troubleshooting and Reporting Issues
