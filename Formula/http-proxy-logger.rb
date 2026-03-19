@@ -23,6 +23,6 @@ class HttpProxyLogger < Formula
   end
 
   test do
-    assert_match "Usage", shell_output("#{bin}/http-proxy-logger -help 2>&1", 2)
+    assert_match "Usage", shell_output("#{bin}/http-proxy-logger -help 2>&1")
   end
 end
