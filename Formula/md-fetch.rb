@@ -6,8 +6,8 @@ class MdFetch < Formula
 
   desc "Extract article content from web platforms and return it as clean Markdown"
   homepage "https://github.com/stn1slv/md-fetch"
-  url "https://files.pythonhosted.org/packages/5f/d9/df7c93506c84cf3787fec012acb871ac554cd565b897a364af551bf09694/mdfetch-0.5.2.tar.gz"
-  sha256 "d44b346e392f3b2b272dcae29aec1968172327db7e0eec230eed8823d556a0cb"
+  url "https://files.pythonhosted.org/packages/29/db/2d5d91ea4d789c60e2aa70b93b3b562be696cf64290a4047b10d1eb52dea/mdfetch-0.6.0.tar.gz"
+  sha256 "72968c11a3d0b9795dcf1c01cd44ee4f084b1de68c5ba4eab9a01b8f0679ac96"
   license "MIT"
 
   depends_on "python@3.12"
