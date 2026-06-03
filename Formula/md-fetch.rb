@@ -9,8 +9,9 @@ class MdFetch < Formula
   url "https://files.pythonhosted.org/packages/ad/52/7926dc45598a1034e20729e358fd1e02864215abf6d97e0331af8e2aba8d/mdfetch-0.8.0.tar.gz"
   sha256 "ea55c1051cb0b01f6797976cbb9a18ea927e50fcb376e9db216b4e334f095b28"
   license "MIT"
+  revision 1
 
-  depends_on "python@3.12"
+  depends_on "python@3.13"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
