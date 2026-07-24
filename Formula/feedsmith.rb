@@ -6,8 +6,8 @@ class Feedsmith < Formula
 
   desc "Generate Atom feeds for blogs that publish no official feed"
   homepage "https://github.com/stn1slv/feedsmith"
-  url "https://github.com/stn1slv/feedsmith/archive/refs/tags/v0.5.2.tar.gz"
-  sha256 "161e1556bc145d80d73f449047c7b40c42ce13cd4f6515819f8fe0d4b3910733"
+  url "https://github.com/stn1slv/feedsmith/archive/refs/tags/v0.5.3.tar.gz"
+  sha256 "d71aa28b7db8d2567636d3aaa69d4be9cd82f8829cec3e2ec64a16444084ba9d"
   license "MIT"
 
   depends_on "rust" => :build # pydantic-core is a Rust extension, built from sdist
