@@ -1,6 +1,6 @@
 cask "overtype" do
-  version "1.0.0"
-  sha256 "a6d59ef1510a16e58f601f80ab0df6fd1f44a0fbb170e6f6a5113bbf942b82bb"
+  version "1.0.1"
+  sha256 "5f520ea94825e1786133c0651bae909f2f6e1483bbe8dbffb42871846a5a24ed"
 
   url "https://github.com/stn1slv/overtype/releases/download/v#{version}/Overtype_#{version}_macos.zip"
   name "Overtype"
@@ -11,6 +11,6 @@ cask "overtype" do
 
   zap trash: [
     "~/Library/Application Support/Overtype",
-    "~/Library/Preferences/com.example.Overtype.plist",
+    "~/Library/Preferences/com.github.stn1slv.Overtype.plist",
   ]
 end
