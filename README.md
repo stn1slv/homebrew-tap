@@ -17,14 +17,15 @@ brew tap stn1slv/tap
 brew install <formula>
 ```
 
-## Available Formulas
+## Available Formulas & Casks
 
-| Formula | Description |
+| Formula / Cask | Description |
 |---------|-------------|
 | [feedsmith](https://github.com/stn1slv/feedsmith) | Generate Atom feeds for blogs that publish no official feed |
 | [http-proxy-logger](https://github.com/stn1slv/http-proxy-logger) | HTTP reverse-proxy with colored request/response logging |
 | [md-fetch](https://github.com/stn1slv/md-fetch) | Extract article content from web platforms as clean Markdown |
 | [md-paste](https://github.com/stn1slv/md-paste) | Convert rich text (HTML/RTF) on the clipboard to Markdown |
+| [overtype](https://github.com/stn1slv/overtype) | AI text transformation utility that types in place via Accessibility API |
 
 ## Troubleshooting
 
