@@ -2,117 +2,24 @@
 # frozen_string_literal: true
 
 class MdFetch < Formula
-  include Language::Python::Virtualenv
-
   desc "Extract article content from web platforms and return it as clean Markdown"
   homepage "https://github.com/stn1slv/md-fetch"
   url "https://files.pythonhosted.org/packages/c6/18/21f9b1be46231b385d13c34e49569457bbc148272e2d4418e3f67f751274/mdfetch-0.9.1.tar.gz"
   sha256 "b191565b5b727f1cf1f05221ecafe5cb8622ed52382a9e8169b0fdb85c52646e"
   license "MIT"
-  revision 2
+  revision 3
 
   depends_on "python@3.13"
+  depends_on "uv" => :build
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
 
-  resource "anyio" do
-    url "https://files.pythonhosted.org/packages/19/14/2c5dd9f512b66549ae92767a9c7b330ae88e1932ca57876909410251fe13/anyio-4.13.0.tar.gz"
-    sha256 "334b70e641fd2221c1505b3890c69882fe4a2df910cba14d97019b90b24439dc"
-  end
-
-  resource "beautifulsoup4" do
-    url "https://files.pythonhosted.org/packages/c3/b0/1c6a16426d389813b48d95e26898aff79abbde42ad353958ad95cc8c9b21/beautifulsoup4-4.14.3.tar.gz"
-    sha256 "6292b1c5186d356bba669ef9f7f051757099565ad9ada5dd630bd9de5fa7fb86"
-  end
-
-  resource "certifi" do
-    url "https://files.pythonhosted.org/packages/25/ee/6caf7a40c36a1220410afe15a1cc64993a1f864871f698c0f93acb72842a/certifi-2026.4.22.tar.gz"
-    sha256 "8d455352a37b71bf76a79caa83a3d6c25afee4a385d632127b6afb3963f1c580"
-  end
-
-  resource "click" do
-    url "https://files.pythonhosted.org/packages/bb/63/f9e1ea081ce35720d8b92acde70daaedace594dc93b693c869e0d5910718/click-8.3.3.tar.gz"
-    sha256 "398329ad4837b2ff7cbe1dd166a4c0f8900c3ca3a218de04466f38f6497f18a2"
-  end
-
-  resource "h11" do
-    url "https://files.pythonhosted.org/packages/01/ee/02a2c011bdab74c6fb3c75474d40b3052059d95df7e73351460c8588d963/h11-0.16.0.tar.gz"
-    sha256 "4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"
-  end
-
-  resource "httpcore" do
-    url "https://files.pythonhosted.org/packages/06/94/82699a10bca87a5556c9c59b5963f2d039dbd239f25bc2a63907a05a14cb/httpcore-1.0.9.tar.gz"
-    sha256 "6e34463af53fd2ab5d807f399a9b45ea31c3dfa2276f15a2c3f00afff6e176e8"
-  end
-
-  resource "httpx" do
-    url "https://files.pythonhosted.org/packages/b1/df/48c586a5fe32a0f01324ee087459e112ebb7224f646c0b5023f5e79e9956/httpx-0.28.1.tar.gz"
-    sha256 "75e98c5f16b0f35b567856f597f06ff2270a374470a5c2392242528e3e3e42fc"
-  end
-
-  resource "idna" do
-    url "https://files.pythonhosted.org/packages/82/77/7b3966d0b9d1d31a36ddf1746926a11dface89a83409bf1483f0237aa758/idna-3.15.tar.gz"
-    sha256 "ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc"
-  end
-
-  resource "lxml" do
-    url "https://files.pythonhosted.org/packages/28/30/9abc9e34c657c33834eaf6cd02124c61bdf5944d802aa48e69be8da3585d/lxml-6.1.0.tar.gz"
-    sha256 "bfd57d8008c4965709a919c3e9a98f76c2c7cb319086b3d26858250620023b13"
-  end
-
-  resource "markdownify" do
-    url "https://files.pythonhosted.org/packages/3f/bc/c8c8eea5335341306b0fa7e1cb33c5e1c8d24ef70ddd684da65f41c49c92/markdownify-1.2.2.tar.gz"
-    sha256 "b274f1b5943180b031b699b199cbaeb1e2ac938b75851849a31fd0c3d6603d09"
-  end
-
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz"
-    sha256 "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81"
-  end
-
-  resource "soupsieve" do
-    url "https://files.pythonhosted.org/packages/7b/ae/2d9c981590ed9999a0d91755b47fc74f74de286b0f5cee14c9269041e6c4/soupsieve-2.8.3.tar.gz"
-    sha256 "3267f1eeea4251fb42728b6dfb746edc9acaffc4a45b27e19450b676586e8349"
-  end
-
-  resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac84269196e94cf00f187f7ed21c242792a923cdb1c61f/typing_extensions-4.15.0.tar.gz"
-    sha256 "0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466"
-  end
-
-  resource "tavily-python" do
-    url "https://files.pythonhosted.org/packages/92/53/e97950453a215a7b8c2c44d70b216f64c0e1d9844d8b91f025104e96d233/tavily_python-0.7.27.tar.gz"
-    sha256 "3fbbee7fc7e252479b264835e6f943b4a81395429c1bd419e8024d11bf2c1831"
-  end
-
-  resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/bd/2a/23f34ec9d04624958e137efdc394888716353190e75f25dd22c7a2c7a8aa/charset_normalizer-3.4.9.tar.gz"
-    sha256 "673611bbd43f0810bec0b0f028ddeaaa501190339cac411f347ac76917c3ae7b"
-  end
-
-  resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz"
-    sha256 "231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c"
-  end
-
-  resource "requests" do
-    url "https://files.pythonhosted.org/packages/ac/c3/e2a2b89f2d3e2179abd6d00ebd70bff6273f37fb3e0cc209f48b39d00cbf/requests-2.34.2.tar.gz"
-    sha256 "f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed"
-  end
-
-  resource "regex" do
-    url "https://files.pythonhosted.org/packages/20/98/04b13f1ddfb63158025291c02e03eb42fbb7acb51d091d541050eb4e35e8/regex-2026.7.19.tar.gz"
-    sha256 "7e77b324909c1617cbb4c668677e2c6ae13f44d7c1de0d4f15f2e3c10f3315b5"
-  end
-
-  resource "tiktoken" do
-    url "https://files.pythonhosted.org/packages/e4/e5/5f3cb2159769d0f4324c0e9e87f9de3c4b1cd45848a96b2eb3566ad5ca77/tiktoken-0.13.0.tar.gz"
-    sha256 "c9435714c3a84c2319499de9a300c0e604449dd0799ff246458b3bb6a7f433c1"
-  end
-
   def install
-    virtualenv_install_with_resources
+    # NOTE: Homebrew enforces a strict network sandbox during the install phase.
+    # To install this formula, users must run: HOMEBREW_NO_SANDBOX=1 brew install md-fetch
+    # Alternatively, you can disable the sandbox from within the ruby script (though Homebrew's sandbox-exec wraps the whole process on macOS, so setting it here only applies to child processes).
+    system "uv", "tool", "install", "--no-cache", "--python", Formula["python@3.13"].opt_bin/"python3.13", "--install-dir", bin, "."
   end
 
   test do
