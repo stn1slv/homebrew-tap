@@ -16,6 +16,7 @@ class MdFetch < Formula
   uses_from_macos "libxslt"
 
   def install
+    ENV["UV_CACHE_DIR"] = buildpath/".uv-cache"
     system "uv", "tool", "install", "--no-cache", "--python", Formula["python@3.13"].opt_bin/"python3.13", "--install-dir", libexec, "--bin-dir", bin, "."
   end
 
