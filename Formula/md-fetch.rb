@@ -12,6 +12,7 @@ class MdFetch < Formula
   revision 1
 
   depends_on "python@3.13"
+  depends_on "rust" => :build
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
