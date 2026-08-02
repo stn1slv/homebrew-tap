@@ -1,6 +1,6 @@
 cask "overtype" do
-  version "1.1.0"
-  sha256 "02c5ea60fbd1d2ccc157f467b1f2750c9674b71f602d909bd8284fd706570d75"
+  version "1.1.1"
+  sha256 "1f64aac2885a078bbbf7c51a74c4bdf8d7681bf8ec255ca97de8f8c4a2f0515d"
 
   url "https://github.com/stn1slv/overtype/releases/download/v#{version}/Overtype_#{version}_macos.zip"
   name "Overtype"
