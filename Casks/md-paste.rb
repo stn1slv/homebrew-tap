@@ -1,6 +1,6 @@
 cask "md-paste" do
-  version "1.4.1"
-  sha256 "3eb2b7f7cfd750780441a0fe3f369dd67283d24dc39ee856f2659d27a27f8406"
+  version "1.4.2"
+  sha256 "b9deefb4b11dc4db73d583fe627d37c66f0d231979562d39757947fae2ed6004"
 
   url "https://github.com/stn1slv/md-paste/releases/download/v#{version}/md-paste_#{version}_macos.zip"
   name "md-paste"
