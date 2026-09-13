@@ -26,6 +26,7 @@ brew install <formula>
 | [md-fetch](https://github.com/stn1slv/md-fetch) | Extract article content from web platforms as clean Markdown |
 | [md-paste](https://github.com/stn1slv/md-paste) | Convert rich text (HTML/RTF) on the clipboard to Markdown |
 | [overtype](https://github.com/stn1slv/overtype) | AI text transformation utility that types in place via Accessibility API |
+| [staraudit](https://github.com/stn1slv/StarAudit) | Detect fake GitHub stars by analyzing star history bursts |
 
 ## Troubleshooting
 
