@@ -10,12 +10,12 @@ class Staraudit < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stn1slv/StarAudit/releases/download/v2.0.2/staraudit-darwin-amd64"
-      sha256 "e0c7c996666727268dc3d03c5d97fd14ce652090ae53e30fa0f9ae344e8af327"
+      url "https://github.com/stn1slv/StarAudit/releases/download/v2.0.3/staraudit-darwin-amd64"
+      sha256 "bcf46cb34f536984c81c2e83e022758ac710386864f4b573e40aa66f86e8d1c5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stn1slv/StarAudit/releases/download/v2.0.2/staraudit-darwin-arm64"
-      sha256 "0a79789fb673c36a6ac909009b8538d67280fb710b7e1ae83d66edc099bc86b9"
+      url "https://github.com/stn1slv/StarAudit/releases/download/v2.0.3/staraudit-darwin-arm64"
+      sha256 "71994bd305daa427c78da3bc30ffb81eb995602d77a2fe7a47f5d8be729ba54e"
     end
   end
 
