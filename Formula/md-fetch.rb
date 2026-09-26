@@ -6,8 +6,8 @@ class MdFetch < Formula
 
   desc "Extract article content from web platforms and return it as clean Markdown"
   homepage "https://github.com/stn1slv/md-fetch"
-  url "https://files.pythonhosted.org/packages/b1/e6/72d2a22177cc3d946dd1ecd47a6b3af44a335a12124605672b218b85dd2f/mdfetch-0.9.3.tar.gz"
-  sha256 "b7ae13c52d8404cbefeb830de5554cd5690a08e8d8c9b5d3b96f30dd343c1c06"
+  url "https://files.pythonhosted.org/packages/c3/84/9dfb831f80dc936078fb105d634fbc01f480938c8039fe562a08cd17fb20/mdfetch-0.9.4.tar.gz"
+  sha256 "9e5013f26ccb086612c61a7578fa7dc80dc4a6d0ef4313c16cbd9f2755417e77"
   license "MIT"
   revision 1
 
@@ -18,8 +18,13 @@ class MdFetch < Formula
   uses_from_macos "libxslt"
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/19/14/2c5dd9f512b66549ae92767a9c7b330ae88e1932ca57876909410251fe13/anyio-4.13.0.tar.gz"
-    sha256 "334b70e641fd2221c1505b3890c69882fe4a2df910cba14d97019b90b24439dc"
+    url "https://files.pythonhosted.org/packages/61/cc/a381afa6efea9f496eff839d4a6a1aed3bfafc7b3ab4b0d1b243a12573dd/anyio-4.14.2.tar.gz"
+    sha256 "cfa139f3ed1a23ee8f88a145ddb5ac7605b8bbfd8592baacd7ce3d8bb4313c7f"
+  end
+
+  resource "anyio" do
+    url "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz"
+    sha256 "9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94"
   end
 
   resource "beautifulsoup4" do
@@ -88,8 +93,8 @@ class MdFetch < Formula
   end
 
   resource "soupsieve" do
-    url "https://files.pythonhosted.org/packages/47/2c/0a5f6f8ee0d5589e48c7640213ed5175d52cf540a06725b628cc1a45d6ce/soupsieve-2.8.4.tar.gz"
-    sha256 "e121fd02e975c695e4e9e8774a5ee35d74714b59307868dcc5319ad2d9e3328e"
+    url "https://files.pythonhosted.org/packages/71/c3/1b817965ac12dc002d7c9cd7dfffdd7d4fbf9b45763ef2ffe7b86ee94670/soupsieve-2.10.tar.gz"
+    sha256 "49e9380d7d2905463583bafe285e818c7366a9ed7b3aee221c1ac79c905d8bc0"
   end
 
   resource "tavily-python" do
