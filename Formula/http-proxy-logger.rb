@@ -4,19 +4,19 @@
 class HttpProxyLogger < Formula
   desc "HTTP reverse-proxy with colored request/response logging"
   homepage "https://github.com/stn1slv/http-proxy-logger"
-  version "1.2.5"
+  version "1.2.6"
   license "MIT"
 
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stn1slv/http-proxy-logger/releases/download/v1.2.5/http-proxy-logger_darwin_amd64.tar.gz"
-      sha256 "4d7bbd1edfc7e1221404af788d3a1a353e044da1555cb32000be5b799da7694d"
+      url "https://github.com/stn1slv/http-proxy-logger/releases/download/v1.2.6/http-proxy-logger_darwin_amd64.tar.gz"
+      sha256 "f13ea30deb4f244327e7f4bf266ef31cf4589b058b9caa54d33217c3bb8229c3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stn1slv/http-proxy-logger/releases/download/v1.2.5/http-proxy-logger_darwin_arm64.tar.gz"
-      sha256 "c79a84ef6869e8027c9809a7d1ed523ba108a8c530c629662fb300af1717d7ed"
+      url "https://github.com/stn1slv/http-proxy-logger/releases/download/v1.2.6/http-proxy-logger_darwin_arm64.tar.gz"
+      sha256 "756be5f483eef8aba570fac4199e70dbdca1f9e24dbfe8e9fa7aef6a162e6af1"
     end
   end
 
