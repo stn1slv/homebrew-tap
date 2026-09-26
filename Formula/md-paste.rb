@@ -5,21 +5,21 @@
 class MdPaste < Formula
   desc "Convert rich text on the clipboard to Markdown"
   homepage "https://github.com/stn1slv/md-paste"
-  version "1.4.2"
+  version "1.4.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/stn1slv/md-paste/releases/download/v1.4.2/md-paste_Darwin_x86_64.tar.gz"
-    sha256 "35889dc9d484677131136b77b7cb083b1ca79ab6b5ad30faf62a7ada0c49dd9a"
+    url "https://github.com/stn1slv/md-paste/releases/download/v1.4.3/md-paste_Darwin_x86_64.tar.gz"
+    sha256 "88a53fb714da87bfb69358f5385b0a4ea856349c880ed6e6fb265c7cec52498c"
 
     define_method(:install) do
       bin.install "md-paste"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/stn1slv/md-paste/releases/download/v1.4.2/md-paste_Darwin_arm64.tar.gz"
-    sha256 "9f379d252044f5d7bf74415bc4e45fc28519671080821723520ca25dd101944f"
+    url "https://github.com/stn1slv/md-paste/releases/download/v1.4.3/md-paste_Darwin_arm64.tar.gz"
+    sha256 "c0e478ff01dd0e58375c7a390e682de2b6fdccc68d30228108c9c77f25734afc"
 
     define_method(:install) do
       bin.install "md-paste"
