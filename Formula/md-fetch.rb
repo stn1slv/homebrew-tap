@@ -6,8 +6,8 @@ class MdFetch < Formula
 
   desc "Extract article content from web platforms and return it as clean Markdown"
   homepage "https://github.com/stn1slv/md-fetch"
-  url "https://files.pythonhosted.org/packages/f7/30/881f36a22d7dc1b886cd4eff2db427997732f6eabd1b37603f5b3b6f168a/mdfetch-0.9.5.tar.gz"
-  sha256 "ec1976c78b41fd5a9685801e296fc6c0fdf70f5404aa6c1a5db53675a4bbd137"
+  url "https://files.pythonhosted.org/packages/6a/ad/02ee9fb9548347fdfbb25ac39a42bc742748308f36dac060392a823e8141/mdfetch-0.9.6.tar.gz"
+  sha256 "d1546fa8742e478899671707c8d602f2864d70cc4034b360877d5fb292a61f28"
   license "MIT"
   revision 1
 
@@ -18,8 +18,8 @@ class MdFetch < Formula
   uses_from_macos "libxslt"
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz"
-    sha256 "9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94"
+    url "https://files.pythonhosted.org/packages/a1/98/7e457a3b014976887a050561955c0b76e1e7e2d6e27b78ecef2ef80518f2/anyio-4.16.0.tar.gz"
+    sha256 "59bb03251907983d1603d27c3087ddb1e93299ea2163adcdba37899a4fb12ffb"
   end
 
   resource "beautifulsoup4" do
@@ -28,8 +28,8 @@ class MdFetch < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz"
-    sha256 "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+    url "https://files.pythonhosted.org/packages/fd/11/b524cbd9bbdaca58608e4cf4053fd463417549e1959fa8d3aa18319f9555/certifi-2026.10.23.tar.gz"
+    sha256 "a9895e6e2758b371e0545e321a3a8fd1fcfd9829ada8824a936dfb16aaaf36cd"
   end
 
   resource "charset-normalizer" do
@@ -38,8 +38,8 @@ class MdFetch < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/c7/0e/7fa0ef50764b67090eca4114772a2abf8b6148198475e54c660b97caeee6/click-8.5.0.tar.gz"
-    sha256 "ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34"
+    url "https://files.pythonhosted.org/packages/45/37/edbf1b0707709013c0cf2e8317e03d97ed29bf4cac709fe328904ae92a38/click-8.5.1.tar.gz"
+    sha256 "9bbfada76703fd1d784b83eea012e3e8c6a001a876543ef104fa56aaaeb072b4"
   end
 
   resource "h11" do
@@ -73,8 +73,8 @@ class MdFetch < Formula
   end
 
   resource "regex" do
-    url "https://files.pythonhosted.org/packages/fc/f2/af1da9d3ceed77bfcdce40427d49ba0be94e4fe84245e3bfef68c10e75b6/regex-2026.9.29.tar.gz"
-    sha256 "8b5fcc4771732191b2b7d1dd68d8f0353f47f8d90b6150f6dce58bf1112442cb"
+    url "https://files.pythonhosted.org/packages/f1/54/e3bf7a314a5e5d0bab5455cfcfc7634ca136fc8b249a7c15c829e88b00f2/regex-2026.11.7.tar.gz"
+    sha256 "8eedab0d8ac69b0602628bc59ab559d09007ff3bcd92aa740e62b10315403007"
   end
 
   resource "requests" do
@@ -88,8 +88,8 @@ class MdFetch < Formula
   end
 
   resource "soupsieve" do
-    url "https://files.pythonhosted.org/packages/5e/77/2dcfa996b01702ab8fd0763d84098f6a640d6162a328f1c04c2697579a1a/soupsieve-3.0.3.tar.gz"
-    sha256 "7dcf6022eed0399eb9934a75e020148f7a2024c37b7dfcd3cf2c5505d69c364e"
+    url "https://files.pythonhosted.org/packages/01/7c/a64eedae0b7776cb9602d2da9cb8f8caae8e1b4c1da5e8e87bf1e68121ec/soupsieve-4.0.1.tar.gz"
+    sha256 "7621e3c5f6b371ed2c5eabaac5de300ac3d66d05e6d7f34783e31b63c4f90c75"
   end
 
   resource "tavily-python" do
