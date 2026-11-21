@@ -5,21 +5,21 @@
 class Teamscache < Formula
   desc "Read the local Microsoft Teams message cache from the command line or over MCP"
   homepage "https://github.com/stn1slv/teamscache"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.0/teamscache_Darwin_x86_64.tar.gz"
-      sha256 "74f29f0d6815ce7cdd9afcdb10480bca28ac6109041c475e37c41120395f887b"
+      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.1/teamscache_Darwin_x86_64.tar.gz"
+      sha256 "140268710cb5ff36534785b6cf28692d34e00682fb26d1dba666e72a04a561dd"
 
       define_method(:install) do
         bin.install "teamscache"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.0/teamscache_Darwin_arm64.tar.gz"
-      sha256 "aaceb33d1751a6c73cb3570a260751579c30bdc3035ec6508f4b17969ff557f3"
+      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.1/teamscache_Darwin_arm64.tar.gz"
+      sha256 "fc1f4850603982f4f80afc10ce073a2445d12967d479d0b16fe066f3c70b879e"
 
       define_method(:install) do
         bin.install "teamscache"
@@ -29,15 +29,15 @@ class Teamscache < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.0/teamscache_Linux_x86_64.tar.gz"
-      sha256 "5567806a6adfe265d9f7bb90292a65d7df35370f1e29c5b1ac639e036d2bfa24"
+      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.1/teamscache_Linux_x86_64.tar.gz"
+      sha256 "b501141ff15d3bc012a29eaec717cb4c50a9b33b241fdb7f0ddc4bf17652db7c"
       define_method(:install) do
         bin.install "teamscache"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.0/teamscache_Linux_arm64.tar.gz"
-      sha256 "d7e071c8cec319deb45e811eac2c317ea95ff904b4af04050c60333726e5935c"
+      url "https://github.com/stn1slv/teamscache/releases/download/v0.1.1/teamscache_Linux_arm64.tar.gz"
+      sha256 "4feda8228a115725ac7590f5d2c9c25294d1a5e2ca9f14b2f4ef242d58f02f95"
       define_method(:install) do
         bin.install "teamscache"
       end
