@@ -27,6 +27,7 @@ brew install <formula>
 | [md-paste](https://github.com/stn1slv/md-paste) | Convert rich text (HTML/RTF) on the clipboard to Markdown |
 | [overtype](https://github.com/stn1slv/overtype) | AI text transformation utility that types in place via Accessibility API |
 | [staraudit](https://github.com/stn1slv/StarAudit) | Detect fake GitHub stars by analyzing star history bursts |
+| [teamscache](https://github.com/stn1slv/teamscache) | Read the local Microsoft Teams message cache from the command line or over MCP |
 
 ## Troubleshooting
 
